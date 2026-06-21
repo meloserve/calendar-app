@@ -2,44 +2,34 @@ import "../styles/Dashboard.css";
 
 export default function Dashboard() {
   return (
-    <div className="dashboard">
+    <div className="layout">
 
-      <aside className="sidebar">
-        <div className="logo">
-          WORKS DIGITAL
-        </div>
+  <div className="left">
+    <p>01 Dashboard</p>
+    <p>02 Calendar</p>
+    <p>03 Capacity</p>
+    <p>04 Settings</p>
+  </div>
 
-        <nav>
-          <p>01 Dashboard</p>
-          <p>02 Calendar</p>
-          <p>03 Capacity</p>
-          <p>04 Settings</p>
-        </nav>
-      </aside>
+  <div className="center">
+    <h1>
+      WORKS
+      <br />
+      DIGITAL
+    </h1>
 
-      <main className="content">
-
-        <section className="hero">
-          <h1>
-            WORKS
-            <br />
-            DIGITAL
-          </h1>
-        </section>
-
-        <section className="date">
-          <p>SUNDAY</p>
-          <h2>07</h2>
-          <p>JUNE 2026</p>
-        </section>
-
-        <section className="capacity">
-          <h2>18H</h2>
-          <p>AVAILABLE</p>
-        </section>
-
-      </main>
-
+    <div className="date">
+      <p>SUNDAY</p>
+      <h2>07</h2>
+      <p>JUNE 2026</p>
     </div>
+  </div>
+
+  <div className="right">
+    <h3>18H</h3>
+    <p>AVAILABLE</p>
+  </div>
+
+</div>
   );
 }
