@@ -2,34 +2,73 @@ import "../styles/Dashboard.css";
 
 export default function Dashboard() {
   return (
-    <div className="layout">
+    <div className="dashboard">
 
-  <div className="left">
-    <p>01 Dashboard</p>
-    <p>02 Calendar</p>
-    <p>03 Capacity</p>
-    <p>04 Settings</p>
-  </div>
+      <aside className="sidebar">
 
-  <div className="center">
-    <h1>
-      WORKS
-      <br />
-      DIGITAL
-    </h1>
+        <div>
+          <h2>WORKS DIGITAL</h2>
+          <p>CALENDAR OS</p>
+        </div>
 
-    <div className="date">
-      <p>SUNDAY</p>
-      <h2>07</h2>
-      <p>JUNE 2026</p>
+        <nav>
+          <p>01 DASHBOARD</p>
+          <p>02 CALENDAR</p>
+          <p>03 CAPACITY</p>
+          <p>04 SETTINGS</p>
+        </nav>
+
+        <div className="profile">
+          <p>TETTA ITO</p>
+          <p>ADMIN</p>
+        </div>
+
+      </aside>
+
+      <main className="content">
+
+        <div className="topbar">
+          <p>SUN, 07 JUN 2026</p>
+          <p>09:41</p>
+        </div>
+
+        <section className="hero">
+
+          <div>
+            <h1>
+              WORKS
+              <br />
+              DIGITAL
+            </h1>
+
+            <p>CALENDAR OS</p>
+          </div>
+
+          <div className="today">
+            <p>TODAY</p>
+            <p>NO EVENTS</p>
+          </div>
+
+        </section>
+
+        <section className="bottom">
+
+          <div>
+            <p>SUNDAY</p>
+            <h2>07</h2>
+            <p>JUNE 2026</p>
+          </div>
+
+          <div className="capacity">
+            <p>CAPACITY</p>
+            <h3>18H</h3>
+            <p>AVAILABLE</p>
+          </div>
+
+        </section>
+
+      </main>
+
     </div>
-  </div>
-
-  <div className="right">
-    <h3>18H</h3>
-    <p>AVAILABLE</p>
-  </div>
-
-</div>
   );
 }

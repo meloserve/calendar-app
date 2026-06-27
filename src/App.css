@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f5f5f3;
+  color: #111;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.dashboard {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  width: 260px;
+  background: #000;
+  color: #fff;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sidebar h2 {
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+.sidebar p {
+  letter-spacing: 2px;
+  font-size: 12px;
+}
+
+.sidebar nav {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.content {
+  flex: 1;
+  padding: 40px 80px;
+}
+
+.topbar {
+  display: flex;
+  justify-content: flex-end;
+  gap: 60px;
+  font-size: 12px;
+  letter-spacing: 3px;
+}
+
+.hero {
+  margin-top: 120px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero h1 {
+  font-size: 120px;
+  line-height: 0.9;
+  font-weight: 300;
+}
+
+.bottom {
+  margin-top: 140px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.bottom h2 {
+  font-size: 160px;
+  font-weight: 300;
+}
+
+.capacity h3 {
+  font-size: 100px;
+  font-weight: 300;
+}
