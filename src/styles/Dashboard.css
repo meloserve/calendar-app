@@ -1,77 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f5f5f3;
+  color: #111;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
 .dashboard {
-  padding: 80px;
-  font-family: Helvetica, Arial, sans-serif;
+  display: flex;
+  min-height: 100vh;
 }
 
-.nav {
-  font-size: 14px;
-  line-height: 1.8;
-  margin-bottom: 120px;
+/* ---------------- */
+/* SIDEBAR */
+/* ---------------- */
+
+.sidebar {
+  width: 260px;
+  background: #000;
+  color: #fff;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.center h1 {
-  font-size: 140px;
-  line-height: 0.9;
-  letter-spacing: -8px;
-  margin: 0;
+.sidebar h2 {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 12px;
 }
 
-.date p {
-  font-size: 16px;
-  margin: 0;
-}
-
-.date h2 {
-  font-size: 220px;
-  line-height: 0.9;
-  margin: 0;
-}
-
-.capacity {
-  margin-top: 60px;
-}
-
-.capacity h3 {
-  font-size: 64px;
-  margin: 0;
-}
-
-.capacity p {
-  margin: 0;
+.sidebar p {
   font-size: 14px;
   letter-spacing: 2px;
 }
 
-.layout {
-  display: grid;
-  grid-template-columns: 220px 1fr 220px;
-  min-height: 80vh;
-}
-
-.left {
-  font-size: 14px;
-  line-height: 2;
-}
-
-.center {
+.sidebar nav {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  gap: 28px;
 }
 
-.right {
+.profile {
+  border-top: 1px solid rgba(255,255,255,0.2);
+  padding-top: 24px;
+}
+
+/* ---------------- */
+/* CONTENT */
+/* ---------------- */
+
+.content {
+  flex: 1;
+  padding: 40px 80px;
+}
+
+.topbar {
   display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  justify-content: center;
+  justify-content: flex-end;
+  gap: 60px;
+  font-size: 13px;
+  letter-spacing: 2px;
 }
 
-.right h3 {
-  font-size: 72px;
-  margin: 0;
+.hero {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 120px;
 }
 
-.right p {
+.hero h1 {
+  font-size: 160px;
+  line-height: 0.9;
+  font-weight: 700;
+  letter-spacing: -0.06em;
+}
+
+.hero p {
+  margin-top: 20px;
   letter-spacing: 4px;
-  font-size: 12px;
+}
+
+.today {
+  margin-top: 60px;
+  text-align: left;
+}
+
+.today p {
+  margin-bottom: 20px;
+}
+
+/* ---------------- */
+/* BOTTOM */
+/* ---------------- */
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: 140px;
+}
+
+.bottom h2 {
+  font-size: 180px;
+  line-height: 0.8;
+  font-weight: 500;
+}
+
+.capacity h3 {
+  font-size: 120px;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.capacity p {
+  letter-spacing: 4px;
 }
