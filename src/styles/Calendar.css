@@ -7,8 +7,15 @@
   color: #111;
 }
 
+/* SIDEBAR */
+
 .calendar-sidebar {
+  box-sizing: border-box;
   width: 260px;
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  align-self: start;
   background: #000;
   color: #fff;
   padding: 48px 40px;
@@ -74,6 +81,8 @@
   opacity: 1;
 }
 
+/* MAIN CONTENT */
+
 .calendar-content {
   padding: 48px 58px 40px;
   min-width: 0;
@@ -125,6 +134,8 @@
   color: #f4f4f1;
 }
 
+/* DATE CONTROLS */
+
 .calendar-controls {
   display: flex;
   justify-content: space-between;
@@ -154,6 +165,8 @@
   display: flex;
   gap: 5px;
 }
+
+/* CALENDAR GRID */
 
 .calendar-grid {
   display: grid;
@@ -209,6 +222,8 @@
   border-bottom: 1px solid rgba(17, 17, 17, 0.15);
 }
 
+/* EVENTS */
+
 .calendar-event {
   position: absolute;
   left: 14px;
@@ -262,6 +277,8 @@
   opacity: 0.55;
 }
 
+/* DAY SUMMARY */
+
 .calendar-bottom {
   display: flex;
   justify-content: space-between;
@@ -312,6 +329,8 @@
   color: #111;
 }
 
+/* RESPONSIVE */
+
 @media (max-width: 980px) {
   .calendar-page {
     grid-template-columns: 1fr;
@@ -319,6 +338,8 @@
 
   .calendar-sidebar {
     width: 100%;
+    height: auto;
+    position: relative;
     min-height: auto;
     padding: 22px;
     gap: 24px;

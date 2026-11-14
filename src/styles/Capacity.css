@@ -7,8 +7,15 @@
   color: #111;
 }
 
+/* SIDEBAR */
+
 .capacity-sidebar {
+  box-sizing: border-box;
   width: 260px;
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  align-self: start;
   background: #000;
   color: #fff;
   padding: 48px 40px;
@@ -547,6 +554,8 @@
 
   .capacity-sidebar {
     width: 100%;
+    height: auto;
+    position: relative;
     min-height: auto;
     padding: 22px;
     gap: 24px;
