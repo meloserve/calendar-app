@@ -1,4 +1,10 @@
-import { useState } from "react";
+
+import {
+  Routes,
+  Route,
+  Navigate,
+  useNavigate,
+} from "react-router-dom";
 
 import Dashboard from "./pages/Dashboard";
 import Calendar from "./pages/Calendar";
@@ -6,21 +12,47 @@ import Capacity from "./pages/Capacity";
 import Settings from "./pages/Settings";
 
 function App() {
-  const [currentPage, setCurrentPage] = useState("dashboard");
+  const navigate = useNavigate();
 
-  switch (currentPage) {
-    case "calendar":
-      return <Calendar onNavigate={setCurrentPage} />;
+  const handleNavigate = (page) => {
+    const paths = {
+      dashboard: "/",
+      calendar: "/calendar",
+      capacity: "/capacity",
+      settings: "/settings",
+    };
 
-    case "capacity":
-      return <Capacity onNavigate={setCurrentPage} />;
+    navigate(paths[page] || "/");
+  };
 
-    case "settings":
-      return <Settings onNavigate={setCurrentPage} />;
+  return (
+    <Routes>
+      <Route
+        path="/"
+        element={<Dashboard onNavigate={handleNavigate} />}
+      />
 
-    default:
-      return <Dashboard onNavigate={setCurrentPage} />;
-  }
+      <Route
+        path="/calendar"
+        element={<Calendar onNavigate={handleNavigate} />}
+      />
+
+      <Route
+        path="/capacity"
+        element={<Capacity onNavigate={handleNavigate} />}
+      />
+
+      <Route
+        path="/settings"
+        element={<Settings onNavigate={handleNavigate} />}
+      />
+
+      <Route
+        path="*"
+        element={<Navigate to="/" replace />}
+      />
+    </Routes>
+  );
 }
 
 export default App;
