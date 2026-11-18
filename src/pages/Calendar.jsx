@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "../styles/Calendar.css";
 
 export default function Calendar({ onNavigate }) {
@@ -35,7 +36,12 @@ export default function Calendar({ onNavigate }) {
     <div className="calendar-page">
       <aside className="calendar-sidebar">
         <div>
-          <h2>WORKS DIGITAL</h2>
+          <Link
+            to="/"
+            style={{ color: "inherit", textDecoration: "none" }}
+          >
+           <h2>WORKS DIGITAL</h2>
+          </Link>
           <p>CALENDAR OS</p>
         </div>
 

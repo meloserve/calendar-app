@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "../styles/Capacity.css";
 
 export default function Capacity({ onNavigate }) {
@@ -39,7 +40,12 @@ export default function Capacity({ onNavigate }) {
       {/* SIDEBAR */}
       <aside className="capacity-sidebar">
         <div>
-          <h2>WORKS DIGITAL</h2>
+          <Link
+            to="/"
+            style={{ color: "inherit", textDecoration: "none" }}
+          >
+           <h2>WORKS DIGITAL</h2>
+          </Link>
           <p>CALENDAR OS</p>
         </div>
 

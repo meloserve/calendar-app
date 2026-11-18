@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "../styles/Settings.css";
 
 export default function Settings({ onNavigate }) {
@@ -7,7 +8,12 @@ export default function Settings({ onNavigate }) {
       {/* SIDEBAR */}
       <aside className="settings-sidebar">
         <div>
-          <h2>WORKS DIGITAL</h2>
+          <Link
+            to="/"
+            style={{ color: "inherit", textDecoration: "none" }}
+          >
+            <h2>WORKS DIGITAL</h2>
+          </Link>
           <p>CALENDAR OS</p>
         </div>
 

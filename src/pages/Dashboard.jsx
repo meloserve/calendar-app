@@ -1,4 +1,4 @@
-
+import { Link } from "react-router-dom";
 import "../styles/Dashboard.css";
 
 export default function Dashboard({ onNavigate }) {
@@ -6,9 +6,14 @@ export default function Dashboard({ onNavigate }) {
     <div className="dashboard">
       <aside className="sidebar">
         <div>
-          <h2>WORKS DIGITAL</h2>
-          <p>CALENDAR OS</p>
-        </div>
+         <Link
+          to="/"
+          style={{ color: "inherit", textDecoration: "none" }}
+      >
+         　<h2>WORKS DIGITAL</h2>
+      </Link>
+      <p>CALENDAR OS</p>
+     </div>
 
         <nav>
           <p onClick={() => onNavigate("dashboard")}>01 DASHBOARD</p>
